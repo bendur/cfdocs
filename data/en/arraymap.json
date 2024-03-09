@@ -60,6 +60,13 @@
 			"description": "",
 			"code": "complexData = [ {a: 4}, {a: 18}, {a: 51} ];\nnewArray = arrayMap( complexData, function(item){\n   return item.a;\n});\nwriteDump(newArray);",
 			"result": "[4, 18, 51]"
+		}, 
+		{
+			"title": "Script Syntax - Member Function",
+			"description": "",
+			"code": "complexData = [ {a: 4}, {a: 18}, {a: 51} ];\nnewArray = complexData.map(function(item){\n   return item.a + 14;\n});\nwriteDump(newArray);",
+			"result": "[18,32,65]",
+			"runnable": true
 		}
 	]
 
